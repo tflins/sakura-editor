@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #ccc;
+
+  padding: 0 60px;
+
+  .logo {
+    display: inline-block;
+  }
+}
