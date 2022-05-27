@@ -1,4 +1,5 @@
-import ToolsBar from "../ToolsBar"
+import ToolsBar from '../ToolsBar'
+
 import style from './index.module.scss'
 
 export default function Header() {

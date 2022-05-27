@@ -1,0 +1,18 @@
+.componentPanel {
+  .list {
+    list-style: none;
+    display: flex;
+    padding: 16px;
+
+    .item {
+      border: 1px solid #000;
+      display: flex;
+      padding: 4px 8px;
+      cursor: pointer;
+
+      .label {
+
+      }
+    }
+  }
+}
