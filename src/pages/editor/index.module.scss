@@ -1,10 +1,23 @@
 .editor {
+  position: relative;
   height: 100%;
 
   .sectionLeft {
     padding-top: 60px;
     width: 200px;
     height: 100%;
+    background-color: white;
+    position: fixed;
+  }
+
+  .main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 60px;
+    width: 500px;
+    height: 500px;
     background-color: white;
   }
 }
