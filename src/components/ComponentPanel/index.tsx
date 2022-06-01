@@ -1,15 +1,14 @@
 import { componentList } from '../../core/base-components'
-import eventBus from '../../utils/event-bus'
 
 import style from './index.module.scss'
 
 export default function ComponentPanel() {
   const hadnleDragStart = (e: React.DragEvent<HTMLDivElement>) => {
-    eventBus.emit('drag-start', e)
+    const index = (e.target as HTMLDivElement).getAttribute('data-index')!
+    e.dataTransfer.setData('index', index)
   }
 
   const handleDragEnd = (e: React.DragEvent<HTMLDivElement>) => {
-    eventBus.emit('drag-end', e)
   }
 
   return (
