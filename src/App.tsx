@@ -1,19 +1,16 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import ComponentPanel from './components/ComponentPanel'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import style from './App.module.scss'
+import Login from './pages/login'
+import Editor from './pages/editor'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className={style.app}>
-      <Header />
-      <section className={style.sectionLeft}>
-        <ComponentPanel />
-      </section>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/editor" element={<Editor />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

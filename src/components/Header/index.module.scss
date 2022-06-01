@@ -6,12 +6,16 @@
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-bottom: 1px solid #ccc;
-
   padding: 0 60px;
 
   .logo {
     display: inline-block;
+    cursor: pointer;
+    
+    h1 {
+      color: var(--c-brand);
+    }
   }
 }

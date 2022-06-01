@@ -1,0 +1,19 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+  .title {
+    color: var(--c-brand);
+  }
+
+  .subTitle {
+    color: var(--c-text-light);
+  }
+}
+
+.loginBox {
+  width: 300px;
+}
