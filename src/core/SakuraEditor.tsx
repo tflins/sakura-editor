@@ -22,7 +22,6 @@ export default function SakuraEditor(props: ISakuraEditorProps) {
     width = defaultSakuraEditorProps.width,
     height = defaultSakuraEditorProps.height,
     mode = defaultSakuraEditorProps.mode,
-    template
   } = props
 
   const style = {
