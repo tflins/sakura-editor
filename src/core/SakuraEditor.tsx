@@ -1,14 +1,17 @@
 import cssStyle from './SakuraEditor.module.scss'
 import { Button as SakuraButton } from './base-components'
+import clsx from 'clsx'
 
 export interface ISakuraEditorProps {
   width?: number | 'auto'
   height?: number | 'auto'
   mode?: 'preview' | 'edit'
-  template?: {
-    id: string
-    components: []
-  }
+  template?: ITemplate
+}
+
+export interface ITemplate {
+  id: string
+  components: []
 }
 
 export const defaultSakuraEditorProps = {
@@ -29,11 +32,11 @@ export default function SakuraEditor(props: ISakuraEditorProps) {
     height: typeof height === 'number' ? `${height}px` : '100%',
   }
 
-  console.log(width, height, mode)
-
   return (
     <div className={cssStyle.sakuraEditor} style={style}>
-      <div className='editor-shell'></div>
+      <div className='editor-shell'>
+        <SakuraButton left={200} top={200} width={100} height={100} />
+      </div>
     </div>
   )
 }
